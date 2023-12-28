@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "hilltoptect-test/proto";
+
+service PriceFetcher {
+  rpc FetchPrice (PriceRequest) returns (PriceResponse);
+}
+
+message PriceRequest {
+  string platform = 1;
+  string from = 2;
+  string to = 3;
+}
+
+message PriceResponse {
+  double price = 1;
+}
