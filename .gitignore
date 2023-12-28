@@ -26,3 +26,4 @@ go.work
 proto/*.go
 go.mod
 go.sum
+bin/*
